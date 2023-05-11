@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="" />
+    <title>AluraGeek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--boxicons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--normalize css-->
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+
+    <!--tailwind-->
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!--css-->
+    <!--header css-->
+    <link rel="stylesheet" href="/assets/css/header/header.css" />
+    <!--navbar css-->
+    <!--footer css-->
+  </head>
+  <body>
+    <!--navbar-->
+    <nav
+      class="flex lg:flex-row flex-col justify-between py-4 lg:px-10 px-2 align-middle items-center"
+    >
+      <div class="mx-5 my-5">
+        <figure>
+          <a href="/index.html"
+            ><img src="/assets/imgs/Logo.svg" alt="logo"
+          /></a>
+        </figure>
+      </div>
+      <div class="text-info">
+        <form class="flex items-center">
+          <label for="simple-search" class="sr-only">Search</label>
+          <div class="relative w-full">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5 text-gray-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="simple-search"
+              class="bg-gray-50 focus:shadow-lg text-blue-900 py-2 px-5 border border-blue-400 focus:border-blue-950 text-sm rounded-lg focus:ring-blue-500 block w-full pl-10 p-2.5"
+              placeholder="Search"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="p-2.5 focus:border-blue-700 ml-2 text-sm font-medium text-white bg-blue-700 rounded border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+          >
+            <i class="bx bx-search mx-3 my-3"></i>
+            <span class="sr-only">Search</span>
+          </button>
+        </form>
+      </div>
+
+      <div class="mx-5 my-5 lg:mx-0 lg:my-0">
+        <button
+          class="py-2 px-4 rounded hover:bg-blue-400 transition-all ease-in-out duration-300 text-white bg-blue-500 text-md border-4 border-blue-500 focus:ring-blue-400"
+        >
+          login
+        </button>
+      </div>
+    </nav>
+    <!--final da navbar-->
+
+    <!--header-->
+    <header class="flex flex-col gap-2">
+      <div class="lg:py-32 py-10">
+        <h2
+          class="text-2xl lg:text-6xl font-bold text-white mb-20 lg:mb-0 lg:mt-44"
+        >
+          Dezembro Promocional
+        </h2>
+        <span class="lg:text-2xl font-bold text-white align-middle"
+          >Produtos selecionados com 33% de desconto</span
+        >
+      </div>
+      <div class="">
+        <button
+          class="mx-auto py-2 px-2 lg:px-4 rounded hover:bg-blue-400 transition-all ease-in-out duration-300 text-white bg-blue-500 text-md border-4 border-blue-500 focus:ring-blue-400"
+        >
+          ver consoles
+        </button>
+      </div>
+    </header>
+    <!--fim da header-->
+
+    <!--produtos-->
+    <main class="products">
+      <!--star wars-->
+      <section class="ml-16 h-max">
+        <div class="flex-row flex justify-between">
+          <h2
+            class="text-lg lg:text-2xl font-bold lg:py-10 lg:px-16 align-middle"
+          >
+            Star Wars
+          </h2>
+          <span
+            class="px-12 hover:text-blue-400 transition-all duration-200 ease-in cursor-pointer text-blue-800 tracking-tight font-bold lg:py-10 lg:px-16 align-middle"
+          >
+            Ver mais</span
+          >
+        </div>
+        <div class="w-max py-4 lg:px-16">
+          <article class="grid lg:grid-cols-6 grid-cols-1">
+            <div class="mb-5">
+              <figure class="max-w-lg">
+                <img
+                  class="rounded w-64 lg:w-48 shadow-xl"
+                  src="/assets/imgs/StarWars/produto1.jpg"
+                  alt=""
+                />
+              </figure>
+              <p class="ml-2 text-gray-700 align-middle">Produto 1</p>
+              <span class="ml-2 text-gray-900 font-bold tracking-wider"
+                >R$237</span
+              >
+              <p
+                class="ml-2 hover:text-blue-400 transition-all duration-200 ease-in text-blue-700 font-bold align-middle cursor-pointer"
+              >
+                Ver produto
+              </p>
+            </div>
+
+            <div class="mb-5">
+              <figure class="max-w-lg">
+                <img
+                  class="rounded w-64 lg:w-48 shadow-xl"
+                  src="/assets/imgs/StarWars/produto2.jpg"
+                  alt=""
+                />
+              </figure>
+              <p class="ml-2 text-gray-700 align-middle">Produto 1</p>
+              <span class="ml-2 text-gray-900 font-bold tracking-wider"
+                >R$430</span
+              >
+              <p
+                class="ml-2 hover:text-blue-400 transition-all duration-200 ease-in text-blue-700 font-bold align-middle cursor-pointer"
+              >
+                Ver produto
+              </p>
+            </div>
+
+            <div>
+              <figure class="max-w-lg">
+                <img
+                  class="rounded w-64 lg:w-48 shadow-xl"
+                  src="/assets/imgs/StarWars/produto3.jpg"
+                  alt=""
+                />
+              </figure>
+              <p class="ml-2 text-gray-700 align-middle">Produto 1</p>
+              <span class="ml-2 text-gray-900 font-bold tracking-wider"
+                >R$327</span
+              >
+              <p
+                class="ml-2 hover:text-blue-400 transition-all duration-200 ease-in text-blue-700 font-bold align-middle cursor-pointer"
+              >
+                Ver produto
+              </p>
+            </div>
+
+            <div>
+              <figure class="max-w-lg">
+                <img
+                  class="rounded w-64 lg:w-48 shadow-xl"
+                  src="/assets/imgs/StarWars/produto4.jpg"
+                  alt=""
+                />
+              </figure>
+              <p class="ml-2 text-gray-700 align-middle">Produto 1</p>
+              <span class="ml-2 text-gray-900 font-bold tracking-wider"
+                >R$190</span
+              >
+              <p
+                class="ml-2 hover:text-blue-400 transition-all duration-200 ease-in text-blue-700 font-bold align-middle cursor-pointer"
+              >
+                Ver produto
+              </p>
+            </div>
+
+            <div>
+              <figure class="max-w-lg">
+                <img
+                  class="rounded w-64 lg:w-48 shadow-xl"
+                  src="/assets/imgs/StarWars/produto5.jpg"
+                  alt=""
+                />
+              </figure>
+              <p class="ml-2 text-gray-700 align-middle">Produto 1</p>
+              <span class="ml-2 text-gray-900 font-bold tracking-wider"
+                >R$600</span
+              >
+              <p
+                class="ml-2 hover:text-blue-400 transition-all duration-200 ease-in text-blue-700 font-bold align-middle cursor-pointer"
+              >
+                Ver produto
+              </p>
+            </div>
+
+            <div>
+              <figure class="max-w-lg">
+                <img
+                  class="rounded w-64 lg:w-48 shadow-xl"
+                  src="/assets/imgs/StarWars/produto6.jpg"
+                  alt=""
+                />
+              </figure>
+              <p class="ml-2 text-gray-700 align-middle">Produto 1</p>
+              <span class="ml-2 text-gray-900 font-bold tracking-wider"
+                >R$237</span
+              >
+              <p
+                class="ml-2 hover:text-blue-400 transition-all duration-200 ease-in text-blue-700 font-bold align-middle cursor-pointer"
+              >
+                Ver produto
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--consoles-->
+      <section class="ml-16 h-max">
+        <div class="flex-row flex justify-between">
+          <h2
+            class="text-lg lg:text-2xl font-bold lg:py-10 lg:px-16 align-middle"
+          >
+            Consoles
+          </h2>
+          <span
+            class="px-12 hover:text-blue-400 transition-all duration-200 ease-in cursor-pointer text-blue-800 tracking-tight font-bold lg:py-10 lg:px-16 align-middle"
+          >
+            Ver mais</span
+          >
+        </div>
+        <div class="w-max py-4 lg:px-16">
+          <article class="grid lg:grid-cols-6 grid-cols-1">
+            <div class="mb-5">
+              <figure class="max-w-lg">
+                <img
+                  class="rounded w-64 lg:w-48 shadow-xl"
+                  src="/assets/imgs/Consoles/produto1.jpg"
+                  alt=""
+                />
+              </figure>
+              <p class="ml-2 text-gray-700 align-middle">Produto 1</p>
+              <span class="ml-2 text-gray-900 font-bold tracking-wider"
+                >R$160</span
+              >
+              <p
+                class="ml-2 hover:text-blue-400 transition-all duration-200 ease-in text-blue-700 font-bold align-middle cursor-pointer"
+              >
+                Ver produto
+              </p>
+            </div>
+
+            <div class="mb-5">
+              <figure class="max-w-lg">
+                <img
+                  class="rounded w-64 lg:w-48 shadow-xl"
+                  src="/assets/imgs/Consoles/produto2.jpg"
+                  alt=""
+                />
+              </figure>
+              <p class="ml-2 text-gray-700 align-middle">Produto 1</p>
+              <span class="ml-2 text-gray-900 font-bold tracking-wider"
+                >R$460</span
+              >
+              <p
+                class="ml-2 hover:text-blue-400 transition-all duration-200 ease-in text-blue-700 font-bold align-middle cursor-pointer"
+              >
+                Ver produto
+              </p>
+            </div>
+
+            <div>
+              <figure class="max-w-lg">
+                <img
+                  class="rounded w-64 lg:w-48 shadow-xl"
+                  src="/assets/imgs/Consoles/produto3.jpg"
+                  alt=""
+                />
+              </figure>
+              <p class="ml-2 text-gray-700 align-middle">Produto 1</p>
+              <span class="ml-2 text-gray-900 font-bold tracking-wider"
+                >R$630</span
+              >
+              <p
+                class="ml-2 hover:text-blue-400 transition-all duration-200 ease-in text-blue-700 font-bold align-middle cursor-pointer"
+              >
+                Ver produto
+              </p>
+            </div>
+
+            <div>
+              <figure class="max-w-lg">
+                <img
+                  class="rounded w-64 lg:w-48 shadow-xl"
+                  src="/assets/imgs/Consoles/produto4.jpg"
+                  alt=""
+                />
+              </figure>
+              <p class="ml-2 text-gray-700 align-middle">Produto 1</p>
+              <span class="ml-2 text-gray-900 font-bold tracking-wider"
+                >R$520</span
+              >
+              <p
+                class="ml-2 hover:text-blue-400 transition-all duration-200 ease-in text-blue-700 font-bold align-middle cursor-pointer"
+              >
+                Ver produto
+              </p>
+            </div>
+
+            <div>
+              <figure class="max-w-lg">
+                <img
+                  class="rounded w-64 lg:w-48 shadow-xl"
+                  src="/assets/imgs/Consoles/produto5.jpg"
+                  alt=""
+                />
+              </figure>
+              <p class="ml-2 text-gray-700 align-middle">Produto 1</p>
+              <span class="ml-2 text-gray-900 font-bold tracking-wider"
+                >R$254</span
+              >
+              <p
+                class="ml-2 hover:text-blue-400 transition-all duration-200 ease-in text-blue-700 font-bold align-middle cursor-pointer"
+              >
+                Ver produto
+              </p>
+            </div>
+
+            <div>
+              <figure class="max-w-lg">
+                <img
+                  class="rounded w-64 lg:w-48 shadow-xl"
+                  src="/assets/imgs/Consoles/produto6.jpg"
+                  alt=""
+                />
+              </figure>
+              <p class="ml-2 text-gray-700 align-middle">Produto 1</p>
+              <span class="ml-2 text-gray-900 font-bold tracking-wider"
+                >R$237</span
+              >
+              <p
+                class="ml-2 hover:text-blue-400 transition-all duration-200 ease-in text-blue-700 font-bold align-middle cursor-pointer"
+              >
+                Ver produto
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <!--fim de produtos-->
+
+    <!--footer-->
+    <!--
+  Heads up! 👋
+
+  Plugins:
+    - @tailwindcss/forms
+-->
+
+    <footer aria-label="site Footer" class="bg-white">
+      <div class="mx-auto max-w-screen-xl px-3 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 font-bold lg:grid-cols-4 gap-10">
+          <div>
+            <figure><img src="/assets/imgs/Logo.svg" alt="" /></figure>
+          </div>
+          <div
+            class="flex items-center flex-col align-middle justify-center gap-10"
+          >
+            <ul>
+              <li class="hover:text-blue-600 cursor-pointer mb-5 px-4 py-1">
+                Quem nós somos
+              </li>
+              <li class="hover:text-blue-600 cursor-pointer mb-5 px-4 py-1">
+                Política de Privacidade
+              </li>
+              <li class="hover:text-blue-600 cursor-pointer mb-5 px-4 py-1">
+                Programa de Fidelidade
+              </li>
+              <li class="hover:text-blue-600 cursor-pointer mb-5 px-4 py-1">
+                Nossas Lojas
+              </li>
+              <li class="hover:text-blue-600 cursor-pointer mb-5 px-4 py-1">
+                Quero ser um franqueado
+              </li>
+              <li class="hover:text-blue-600 cursor-pointer mb-5 px-4 py-1">
+                Anuncie Aqui
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="capitalize font-bold text-black">fale conosco</h3>
+
+            <input
+              class="mb-10 border-gray-500 border rounded focus:border-gray-700 ring-gray-500 shadow-lg px-10 py-2"
+              type="text"
+              name=""
+              id=""
+              placeholder="Seu nome"
+            />
+            <textarea
+              class="border-gray-500 border rounded focus:border-gray-700 ring-gray-500 shadow-lg px-10 py-2 resize-none"
+              name=""
+              id=""
+              cols="24"
+              rows="5"
+              placeholder="Sua mensagem"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section
+      class="flex justify-center items-center font-bold tracking-tighter p-4 bg-base-300 text-base-content"
+    >
+      <div>
+        <p>Copyright © 2023 - Desenvolvido por Natalia Carvalho</p>
+      </div>
+    </section>
+
+    <!--javascript-->
+  </body>
+</html>

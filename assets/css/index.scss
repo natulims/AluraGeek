@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//paleta de cores
+$primary: #023047;
+$secondary: #219ebc;
+$info: #48cae4;
+$warning: #fdca40;
+$danger: #ef476f;
+$success: #06d6a0;
+$neutral: #71a5de;
+$backgroundcolor: #f6f9fd;
+
+body {
+  background-color: $backgroundcolor;
+  font-family: "Poppins", sans-serif;
+  color: $primary;
+}
